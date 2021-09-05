@@ -1,0 +1,188 @@
+*{
+    font-family: viga;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+}
+.navbar-brand{
+    font-size: 32px;
+    color: rgb(219, 0, 0) !important;
+    text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.75);
+    text-align: center;
+}
+/* section */
+.section{
+    min-height: 600px;
+}
+
+/* title */
+.title{
+    padding: 20px;
+    padding-bottom: -15px;
+}
+hr{
+    width: 250px;
+    border: 2px solid rgb(219, 0, 0);
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(img/bg7.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    margin-top: -35px;
+}
+
+.jumbotron img{
+    width: 200px;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    margin-top: 12px;
+}
+
+/* about */
+.list-group{
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.pKiri, .pKanan{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 1s;
+}
+.pKanan{
+    transform: translate(50PX,0);
+}
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* education */
+.education{
+    background-color: #acacac;
+}
+.card{
+    margin-bottom: 20px;
+}
+.card-text{
+    text-align: center;
+}
+
+/* galery */
+.galery .slide{
+    margin-bottom: 40px;
+}
+.carousel-inner{
+    border: 5px solid black;
+}
+
+/* wr */
+.wr {
+    background-color: #acacac;
+}
+.wr .col-lg{
+    margin-top: 25px;
+}
+
+/* contact */
+.contact .row{
+    margin-bottom: 15px;
+}
+.contact .logo{
+    margin-bottom: 10px;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    height: 40px;
+}
+.footer .container p{
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Dekstop Version */
+@media (min-width: 992px) { 
+    .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+    }
+    .navbar-brand{
+        color: rgb(219, 0, 0) !important;
+        text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.75);
+        border: 3px solid black;
+        border-radius: 100px;
+        text-align: center;
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(219, 0, 0);
+        width: 100%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* section */
+    section{
+        min-height: 700px !important;
+    }
+
+    /* jumbotron */
+    .jumbotron{
+        height: 700px;
+        margin-top: 0px;
+    }
+    .jumbotron img{
+        width: 225px;
+    }
+    .jumbotron p{
+        font-size: 28px;
+    }
+}
+
